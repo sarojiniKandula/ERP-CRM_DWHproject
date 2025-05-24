@@ -1,0 +1,26 @@
+/*
+=======================================================================
+Create Database and schemas
+=======================================================================
+Database name : DataWarehouse
+Schemas: Rawdata,Processeddata,Analyzeddata*/
+
+Use Master;
+Go
+
+-- Drop and recreate "DataWarehouse" database
+Drop database DataWarehouse
+
+---- Create the "DataWarehouse" database
+CREATE DATABASE DataWarehouse;
+Go
+
+use DataWarehouse;
+Go
+-- Create schemas
+create Schema Rawdata;
+Go
+create Schema Processeddata;
+Go
+create Schema Analyzeddata;
+Go
